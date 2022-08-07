@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ShoeStorage</string>
+    <string name="code_database">База кодів</string>
+    <string name="storage">Склад</string>
+    <string name="account">Аккаунт</string>
+    <string name="fab_add_shoe_code">Add Shoe Code</string>
+    <string name="model_name">Назва моделі</string>
+    <string name="model_type">Тип моделі</string>
+    <string name="model_size">36</string>
+    <string name="model_color">Колір моделі</string>
+    <string name="model_material">Матеріал моделі</string>
+    <string name="model_lining">Матеріал підкладки</string>
+    <string name="enter_model_type">Введіть тип моделі</string>
+    <string name="save_model_type">Додати тип моделі</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
