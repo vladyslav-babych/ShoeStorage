@@ -25,47 +25,61 @@
         android:label="fragment_shoe_codes"
         tools:layout="@layout/fragment_shoe_types_list" >
         <action
-            android:id="@+id/action_shoeCodesFragment4_to_addShoeTypeListFragment"
-            app:destination="@id/addShoeTypeListFragment" />
-        <action
             android:id="@+id/action_shoeModelTypesFragment_to_shoeListFragment"
             app:destination="@id/shoeListFragment" />
+        <action
+            android:id="@+id/action_shoeModelTypesFragment_to_mainFragment3"
+            app:destination="@id/mainFragment3" />
+        <action
+            android:id="@+id/action_shoeModelTypesFragment_to_addEditModelType"
+            app:destination="@id/addEditModelType" />
     </fragment>
-    <fragment
-        android:id="@+id/editShoeFragment"
-        android:name="com.otaman.shoestorage.view.fragments.EditShoeCodeFragment"
-        android:label="fragment_edit_shoe_code"
-        tools:layout="@layout/fragment_edit_shoe_code" />
     <fragment
         android:id="@+id/shoeStorageFragment2"
         android:name="com.otaman.shoestorage.ShoeStorageFragment"
         android:label="fragment_shoe_storage"
-        tools:layout="@layout/fragment_shoe_storage" />
+        tools:layout="@layout/fragment_shoe_storage" >
+        <action
+            android:id="@+id/action_shoeStorageFragment2_to_mainFragment3"
+            app:destination="@id/mainFragment3" />
+    </fragment>
     <fragment
         android:id="@+id/accountFragment2"
         android:name="com.otaman.shoestorage.AccountFragment"
         android:label="fragment_account"
-        tools:layout="@layout/fragment_account" />
-    <fragment
-        android:id="@+id/addShoeTypeListFragment"
-        android:name="com.otaman.shoestorage.AddShoeTypeListFragment"
-        android:label="fragment_add_shoe_type_list"
-        tools:layout="@layout/fragment_add_shoe_type_list" />
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment2_to_mainFragment3"
+            app:destination="@id/mainFragment3" />
+    </fragment>
     <fragment
         android:id="@+id/shoeListFragment"
         android:name="com.otaman.shoestorage.ShoeListFragment"
         android:label="fragment_shoe_list"
         tools:layout="@layout/fragment_shoe_list" >
         <action
-            android:id="@+id/action_shoeListFragment_to_editShoeCodeFragment"
-            app:destination="@id/editShoeFragment" />
-        <action
             android:id="@+id/action_shoeListFragment_to_addShoeFragment"
             app:destination="@id/addShoeFragment" />
+        <action
+            android:id="@+id/action_shoeListFragment_to_shoeModelTypesFragment"
+            app:destination="@id/shoeModelTypesFragment" />
     </fragment>
     <fragment
         android:id="@+id/addShoeFragment"
         android:name="com.otaman.shoestorage.AddShoeFragment"
         android:label="fragment_add_shoe"
-        tools:layout="@layout/fragment_add_shoe" />
+        tools:layout="@layout/fragment_add_shoe" >
+        <action
+            android:id="@+id/action_addShoeFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditModelType"
+        android:name="com.otaman.shoestorage.AddEditModelType"
+        android:label="fragment_add_edit_model_type"
+        tools:layout="@layout/fragment_add_edit_model_type" >
+        <action
+            android:id="@+id/action_addEditModelType_to_shoeModelTypesFragment"
+            app:destination="@id/shoeModelTypesFragment" />
+    </fragment>
 </navigation>

@@ -11,7 +11,14 @@
     <string name="model_material">Матеріал моделі</string>
     <string name="model_lining">Матеріал підкладки</string>
     <string name="enter_model_type">Введіть тип моделі</string>
-    <string name="save_model_type">Додати тип моделі</string>
+    <string name="add_model_type">Додати тип моделі</string>
+    <string name="delete_model_type">Видалити</string>
+    <string name="save_model_type">Зберегти</string>
+    <string name="model_type_male">Чоловічі</string>
+    <string name="model_type_female">Жіночі</string>
+    <string name="deny">Скасувати</string>
+    <string name="model_male_female">Чоловічі/Жіночі</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -1,21 +1,29 @@
 package com.otaman.shoestorage.viewmodel.shoetypeslist
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.otaman.shoestorage.model.shoelist.ShoeTypesList
-import com.otaman.shoestorage.model.shoelist.ShoeTypesListRepository
-import com.otaman.shoestorage.model.shoelist.room.ShoeTypesListDatabase
-import kotlinx.coroutines.Dispatchers
+import com.otaman.shoestorage.data.shoelist.ShoeTypesList
+import com.otaman.shoestorage.data.shoelist.ShoeTypesListRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class ShoeTypesListViewModel(application: Application): AndroidViewModel(application) {
-    private val dao = ShoeTypesListDatabase.getInstance(application).getAllShoeTypeListsDao()
-    private val repository = ShoeTypesListRepository.getInstance(dao)
+@HiltViewModel
+class ShoeTypesListViewModel @Inject constructor(
+    private val repository: ShoeTypesListRepository
+): ViewModel() {
     val allShoeTypesList: LiveData<List<ShoeTypesList>> = repository.getAllShoeTypeLists()
 
-    fun deleteShoeTypeList(shoeTypesList: ShoeTypesList) = viewModelScope.launch(Dispatchers.IO) {
+    fun addShoeTypeList(shoeTypesList: ShoeTypesList) = viewModelScope.launch {
+        repository.insertShoeTypeList(shoeTypesList)
+    }
+
+    fun deleteShoeTypeList(shoeTypesList: ShoeTypesList) = viewModelScope.launch {
         repository.deleteShoeTypeList(shoeTypesList)
+    }
+
+    fun updateShoeModelType(shoeTypesList: ShoeTypesList) = viewModelScope.launch {
+        repository.updateShoeModelType(shoeTypesList)
     }
 }

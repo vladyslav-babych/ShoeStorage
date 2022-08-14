@@ -4,16 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/rounded_borders.xml" value="0.315" />
+        <entry key="app/src/main/res/drawable-v24/rounded_edittext.xml" value="0.315" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.315" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/fragment_add_edit_model_type.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/fragment_add_shoe.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_add_shoe_type_list.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_edit_shoe_code.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/fragment_shoe_codes.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/fragment_shoe_list.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_shoe_storage.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/fragment_shoe_types_list.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/shoe_codes_item.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/shoe_type_list_item.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/shoe_type_list_item.xml" value="0.5" />
       </map>
     </option>
   </component>
